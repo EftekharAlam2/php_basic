@@ -1,3 +1,18 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: index.html");
+    exit();
+}
+
+if (isset($_POST['logout'])) {
+  session_destroy(); 
+  header("Location: index.html"); 
+  exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -27,6 +42,10 @@
               <i class="glyphicon glyphicon-user"></i>
               <i class="glyphicon glyphicon-search"></i>
             </div>
+            <li><a href="register.html">Register</a></li>
+            <form method="post" action="">
+                 <button type="submit" name="logout">Logout</button>
+            </form>
           </ul>
         </div>
       </div>

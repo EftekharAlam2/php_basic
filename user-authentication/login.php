@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 if($_SERVER["REQUEST_METHOD"] == "POST"){
   $username = $_POST['username'];
   $password = $_POST['password'];
@@ -20,7 +22,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   $result = $conn->query($query);
 
   if($result->num_rows == 1){
-    header("Location: home.html");
+    $_SESSION['username'] = $username;
+        header("Location: home.php");
     exit();
   }
   else{
