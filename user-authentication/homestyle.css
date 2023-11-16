@@ -1,0 +1,86 @@
+.section1 {
+  background: linear-gradient(rgba(8, 8, 8, 0.689), rgba(0, 0, 0, 0.561)),
+    url("banner.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.nav1 h1 {
+  color: white;
+}
+
+.nav2 {
+  color: white;
+}
+
+.nav2 ul {
+  display: flex;
+  gap: 10vh;
+  font-size: 20px;
+  padding-top: 1.5vh;
+}
+
+.nav3 {
+  display: flex;
+  gap: 2vh;
+}
+
+.below-nav {
+  color: white;
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.below-nav-p1 {
+  font-size: 3vh;
+}
+.below-nav-p2 {
+  font-size: 7vh;
+}
+.below-nav-p3 {
+  font-size: 2vh;
+}
+
+.button-container {
+  text-align: center;
+  padding-top: 6vh;
+}
+
+.exceptional-button {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 15px 15px 5px 30px;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  transition: background 0.3s ease-in-out;
+}
+
+.exceptional-button:hover {
+  background: linear-gradient(45deg, #2ecc71, #3498db);
+}
+
+.circle-container {
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background-color: transparent;
+  margin: 4px;
+  margin-top: 5vh;
+}
