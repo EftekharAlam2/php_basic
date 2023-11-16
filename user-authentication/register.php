@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    header("Location: index.html");
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,7 +29,9 @@
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required />
           </div>
-          <button type="submit" value="login" class="login-btn">Login</button>
+          <button type="submit" value="Register" class="login-btn">
+            Register
+          </button>
         </form>
       </div>
     </section>

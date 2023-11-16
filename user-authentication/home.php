@@ -42,9 +42,9 @@ if (isset($_POST['logout'])) {
               <i class="glyphicon glyphicon-user"></i>
               <i class="glyphicon glyphicon-search"></i>
             </div>
-            <li><a href="register.html">Register</a></li>
+            <li><a href="register.php">Register</a></li>
             <form method="post" action="">
-                 <button type="submit" name="logout">Logout</button>
+                 <button type="submit" name="logout" style="background-color: #e74c3c; color: #fff; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; margin-left: 10px;">Logout</button>
             </form>
           </ul>
         </div>
